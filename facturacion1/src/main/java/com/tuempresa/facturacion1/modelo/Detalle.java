@@ -9,6 +9,4 @@ public class Detalle {
 
     @ManyToOne(fetch = FetchType.LAZY, optional = true)
     Producto producto;
-
-    producto.numero = N° de Producto
 }
