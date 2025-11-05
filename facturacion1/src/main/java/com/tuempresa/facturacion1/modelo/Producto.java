@@ -29,4 +29,8 @@ public class Producto {
             optional=true) // La referencia puede estar sin valor
     @DescriptionsList // Así la referencia se visualiza usando un combo
     Categoria categoria; // Una referencia Java convencional
+
+    @ManyToOne(fetch=FetchType.LAZY)
+    @DescriptionsList
+    Autor autor;
 }
